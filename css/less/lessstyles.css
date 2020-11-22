@@ -50,6 +50,9 @@ img {
 }
 .progress {
   margin: 15px !important;
+  border-style: solid;
+  height: 1.2rem;
+  border-color: #05091f;
 }
 .navbar {
   color: #ffeff3 !important;
@@ -196,27 +199,68 @@ img {
   animation-iteration-count: infinite;
 }
 .skill-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: secondaryFont;
+  font-size: 1rem;
+  background-color: #946b14;
+  color: #05091f;
+  padding: 2%;
   margin-top: 2%;
-  color: #ffeff3;
+  border-radius: 15px;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+}
+.skill-section:hover {
+  background-color: #c78a07;
 }
 .green {
-  background-color: #10814c !important;
+  background-color: #126d43 !important;
 }
 .blue {
-  background-color: #107481 !important;
+  background-color: #15616b !important;
 }
 .red {
-  background-color: #811028 !important;
+  background-color: #d41740 !important;
 }
 .progress {
   padding: 0 !important;
   margin: 5px !important;
+  background-color: #05091f;
 }
 .progress-bar {
-  background-color: #c78a07;
+  font-weight: bold;
   color: #05091f;
   text-align: left !important;
   text-indent: 1%;
+}
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
+  padding: 2px;
+  border-radius: 100%;
+  border: 2px solid;
+  border-color: #ffeff3;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  border: none;
+}
+.nav-link :hover {
+  color: #05091f;
+}
+.fab {
+  color: #ffeff3;
+  font-size: 2rem;
 }
 h1,
 h2,
@@ -225,20 +269,6 @@ h4,
 h5,
 h6 {
   font-family: primaryFont;
-}
-.section a {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  text-decoration: none;
-  border-radius: 10px;
-  padding: 2%;
-  background-color: #ffb7c9;
-  color: #ad143a;
-  transition: background-color 0.5s;
-  -webkit-transition: background-color 0.5s;
-  transition: color 0.5s;
-  -webkit-transition: color 0.5s;
 }
 .section a:hover {
   background-color: #ad143a;
