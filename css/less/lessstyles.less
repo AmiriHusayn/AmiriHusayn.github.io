@@ -137,7 +137,7 @@ img {
     color: @FontColor_Primary;
     background-color: @ShapeColor1_Primary;
 
-    width: 50%;
+    width: 85%;
     padding: @padding;
     margin: @margin;
     border-radius: @borderRadius;
@@ -169,7 +169,7 @@ img {
     color: @FontColor_Primary;
     background-color: @ShapeColor2_Primary;
 
-    width: 50%;
+    width: 85%;
     padding: @padding;
     margin: @margin;
     border-radius: @borderRadius;
@@ -183,6 +183,26 @@ img {
 .text-class{
   text-align: justify !important;
   font-size: .85rem;
+}
+.sample-section{
+    .d-flex-row;
+    font-family: secondaryFont;
+    font-size: 1rem;
+    text-justify: newspaper;
+    text-align: justify;
+
+    width: 85%;
+    height: 400px;
+    padding: @padding;
+    margin: @margin;
+    border-radius: @borderRadius;
+}
+.sample-art{
+    width: 250px;
+    height: 250px;
+    animation: SampleArtAnimation 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
 }
 h1 , h2 , h3 , h4 , h5 , h6{
     font-family: primaryFont;
@@ -215,5 +235,22 @@ h1 , h2 , h3 , h4 , h5 , h6{
     to{
         padding-bottom: 5%;
         padding-top: 5%;
+    }
+}
+@keyframes SampleArtAnimation{
+    0%{
+        width: 250px;
+        height: 250px;
+        transform: rotate(2deg);
+    }
+    50%{
+        width: 255px;
+        height: 255px;
+        transform: rotate(-2deg);
+    }
+    100%{
+        width: 250px;
+        height: 250px;
+        transform: rotate(2deg);
     }
 }
