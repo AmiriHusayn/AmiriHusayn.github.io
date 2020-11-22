@@ -6,6 +6,9 @@
 @ShapeColor2_Secondary: #c78a07;
 @FontColor_Primary: #ffeff3;
 @FontColor_Secondary: #ffb7c9;
+@GreenColor: #10814c;
+@BlueColor: #107481;
+@RedColor: #811028;
 
 /* Size variables */
 @width: 100%;
@@ -166,7 +169,7 @@ img {
     font-size: 1rem;
     text-justify: newspaper;
     text-align: justify;
-    color: @FontColor_Primary;
+    color: @BackgroundColor;
     background-color: @ShapeColor2_Primary;
 
     width: 85%;
@@ -203,6 +206,29 @@ img {
     animation: SampleArtAnimation 3s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
+}
+.skill-section{
+    margin-top: @margin;
+    color: @FontColor_Primary;
+}
+.green{
+    background-color: @GreenColor !important;
+}
+.blue{
+    background-color: @BlueColor !important;
+}
+.red{
+    background-color: @RedColor !important;
+}
+.progress{
+    padding: 0 !important;
+    margin: 5px !important;
+}
+.progress-bar{
+    background-color: @ShapeColor2_Secondary;
+    color: @BackgroundColor;
+    text-align: left !important;
+    text-indent: 1%;
 }
 h1 , h2 , h3 , h4 , h5 , h6{
     font-family: primaryFont;

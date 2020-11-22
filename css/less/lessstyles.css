@@ -158,7 +158,7 @@ img {
   font-size: 1rem;
   text-justify: newspaper;
   text-align: justify;
-  color: #ffeff3;
+  color: #05091f;
   background-color: #946b14;
   width: 85%;
   padding: 2%;
@@ -194,6 +194,29 @@ img {
   animation: SampleArtAnimation 3s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
+}
+.skill-section {
+  margin-top: 2%;
+  color: #ffeff3;
+}
+.green {
+  background-color: #10814c !important;
+}
+.blue {
+  background-color: #107481 !important;
+}
+.red {
+  background-color: #811028 !important;
+}
+.progress {
+  padding: 0 !important;
+  margin: 5px !important;
+}
+.progress-bar {
+  background-color: #c78a07;
+  color: #05091f;
+  text-align: left !important;
+  text-indent: 1%;
 }
 h1,
 h2,
