@@ -1,7 +1,9 @@
 /* Color variables */
 @BackgroundColor: #05091f;
-@ShapeColor_Primary: #ad143a;
-@ShapeColor_Secondary: #da1c4b;
+@ShapeColor1_Primary: #ad143a;
+@ShapeColor1_Secondary: #da1c4b;
+@ShapeColor2_Primary: #946b14;
+@ShapeColor2_Secondary: #c78a07;
 @FontColor_Primary: #ffeff3;
 @FontColor_Secondary: #ffb7c9;
 
@@ -27,7 +29,58 @@ body{
     background-color: @BackgroundColor;
     font-size: 100%;
 }
+img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 /* classes */
+.carousel-item img{
+    height: 400px;
+}
+.bg-light{
+    background-color: @ShapeColor1_Primary !important;
+}
+.bg-light:hover{
+    background-color: @ShapeColor1_Secondary !important;
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+}
+.flex-start{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.flex-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card{
+    margin: 15px !important;
+}
+.progress{
+    margin: 15px !important;
+}
+.navbar{
+    color: @FontColor_Primary !important;
+    border-radius: 15px;
+    margin: 15px !important;
+}
+.nav-item{
+    color: @FontColor_Primary !important;
+    transition: color .5s;
+    -webkit-transition: color .5s;
+}
+.nav-item:hover{
+    color: @BackgroundColor !important;
+}
+.navbar:hover{
+    background-color: @ShapeColor1_Secondary;
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+}
 .d-flex-row{
     display: flex;
     flex-direction: row;
@@ -37,6 +90,9 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+.carousel{
+    border-radius: 15px;
 }
 .pic-frame{
     .d-flex-row;
@@ -79,7 +135,7 @@ body{
     text-justify: newspaper;
     text-align: justify;
     color: @FontColor_Primary;
-    background-color: @ShapeColor_Primary;
+    background-color: @ShapeColor1_Primary;
 
     width: 50%;
     padding: @padding;
@@ -93,7 +149,7 @@ body{
     animation-fill-mode: forwards;
 }
 .section:hover{
-    background-color: @ShapeColor_Secondary;
+    background-color: @ShapeColor1_Secondary;
 }
 .section p{
     width:  @width;
@@ -101,6 +157,32 @@ body{
 }
 .section p::first-letter{
     font-size: 1.5srem;
+}
+.text-section{
+    .d-flex-row;
+    align-items: center;
+    justify-content: center;
+    font-family: secondaryFont;
+    font-size: 1rem;
+    text-justify: newspaper;
+    text-align: justify;
+    color: @FontColor_Primary;
+    background-color: @ShapeColor2_Primary;
+
+    width: 50%;
+    padding: @padding;
+    margin: @margin;
+    border-radius: @borderRadius;
+
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+}
+.text-section:hover {
+    background-color: @ShapeColor2_Secondary;
+}
+.text-class{
+  text-align: justify !important;
+  font-size: .85rem;
 }
 h1 , h2 , h3 , h4 , h5 , h6{
     font-family: primaryFont;
@@ -111,7 +193,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
     border-radius: 10px;
     padding: @padding;
     background-color: @FontColor_Secondary;
-    color: @ShapeColor_Primary;
+    color: @ShapeColor1_Primary;
 
     transition: background-color .5s;
     -webkit-transition: background-color .5s;
@@ -120,12 +202,12 @@ h1 , h2 , h3 , h4 , h5 , h6{
     -webkit-transition: color .5s;
 }
 .section a:hover{
-    background-color: @ShapeColor_Primary;
+    background-color: @ShapeColor1_Primary;
     color: @FontColor_Primary;
 }
 .section a:active{
     background-color: white;
-    color: @ShapeColor_Primary;
+    color: @ShapeColor1_Primary;
 }
 
 /* Animation */

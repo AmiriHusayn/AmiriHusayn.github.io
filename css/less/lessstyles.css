@@ -17,7 +17,58 @@ body {
   background-color: #05091f;
   font-size: 100%;
 }
+img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 /* classes */
+.carousel-item img {
+  height: 400px;
+}
+.bg-light {
+  background-color: #ad143a !important;
+}
+.bg-light:hover {
+  background-color: #da1c4b !important;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+}
+.flex-start {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.card {
+  margin: 15px !important;
+}
+.progress {
+  margin: 15px !important;
+}
+.navbar {
+  color: #ffeff3 !important;
+  border-radius: 15px;
+  margin: 15px !important;
+}
+.nav-item {
+  color: #ffeff3 !important;
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+}
+.nav-item:hover {
+  color: #05091f !important;
+}
+.navbar:hover {
+  background-color: #da1c4b;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+}
 .d-flex-row {
   display: flex;
   flex-direction: row;
@@ -27,6 +78,9 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+.carousel {
+  border-radius: 15px;
 }
 .pic-frame {
   display: flex;
@@ -48,20 +102,9 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 100%;
-  transition: width 1s;
-  -webkit-transition: width 1s;
-  transition: height 1s;
-  -webkit-transition: height 1s;
 }
 .pic-frame:hover {
   background-color: #ffeff3;
-  animation: PicFrameAnimation 0.5s;
-  animation-fill-mode: forwards;
-}
-.pic-frame img:hover {
-  background-color: #ffeff3;
-  animation: ImageAnimation 0.5s;
-  animation-fill-mode: forwards;
 }
 .author {
   display: flex;
@@ -86,7 +129,7 @@ body {
   text-align: justify;
   color: #ffeff3;
   background-color: #ad143a;
-  width: 85%;
+  width: 50%;
   padding: 2%;
   margin: 2%;
   border-radius: 15px;
@@ -104,6 +147,32 @@ body {
 }
 .section p::first-letter {
   font-size: 1.5srem;
+}
+.text-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: secondaryFont;
+  font-size: 1rem;
+  text-justify: newspaper;
+  text-align: justify;
+  color: #ffeff3;
+  background-color: #946b14;
+  width: 50%;
+  padding: 2%;
+  margin: 2%;
+  border-radius: 15px;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+}
+.text-section:hover {
+  background-color: #c78a07;
+}
+.text-class {
+  text-align: justify !important;
+  font-size: 0.85rem;
 }
 h1,
 h2,
@@ -140,17 +209,5 @@ h6 {
   to {
     padding-bottom: 5%;
     padding-top: 5%;
-  }
-}
-@keyframes ImageAnimation {
-  to {
-    width: 101%;
-    height: 101%;
-  }
-}
-@keyframes PicFrameAnimation {
-  to {
-    width: 80px;
-    height: 80px;
   }
 }
