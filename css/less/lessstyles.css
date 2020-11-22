@@ -275,6 +275,27 @@ h6 {
   background-color: white;
   color: #ad143a;
 }
+.section-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: secondaryFont;
+  font-size: 1rem;
+  text-justify: newspaper;
+  text-align: justify;
+  color: #ffeff3;
+  background-color: #ad143a;
+  padding: 2%;
+  margin-top: 2%;
+  border-radius: 15px;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  animation: Animation 2s;
+  animation-fill-mode: forwards;
+  margin-bottom: 2%;
+}
 /* Animation */
 @keyframes Animation {
   to {
