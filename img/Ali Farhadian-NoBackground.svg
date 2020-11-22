@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -16,7 +14,9 @@
    version="1.1"
    id="svg8"
    sodipodi:docname="Ali Farhadian-NoBackground.svg"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <title
+     id="title2292">Ali Farhadian</title>
   <defs
      id="defs2">
     <linearGradient
@@ -326,7 +326,8 @@
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:snap-nodes="false"
-     inkscape:snap-page="true" />
+     inkscape:snap-page="true"
+     inkscape:document-rotation="0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -335,7 +336,20 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>Ali Farhadian</dc:title>
+        <cc:license
+           rdf:resource="https://github.com/amirihusayn" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>AmiriHusayn</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>AmiriHusayn</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+        <dc:description>A cartoony face desing.</dc:description>
       </cc:Work>
     </rdf:RDF>
   </metadata>
