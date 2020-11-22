@@ -132,9 +132,8 @@ img {
   text-align: justify;
   color: #ffeff3;
   background-color: #ad143a;
-  width: 85%;
   padding: 2%;
-  margin: 2%;
+  margin-top: 2%;
   border-radius: 15px;
   transition: background-color 0.5s;
   -webkit-transition: background-color 0.5s;
@@ -163,9 +162,8 @@ img {
   text-align: justify;
   color: #05091f;
   background-color: #946b14;
-  width: 85%;
   padding: 2%;
-  margin: 2%;
+  margin-top: 2%;
   border-radius: 15px;
   transition: background-color 0.5s;
   -webkit-transition: background-color 0.5s;
@@ -185,7 +183,6 @@ img {
   font-size: 1rem;
   text-justify: newspaper;
   text-align: justify;
-  width: 85%;
   height: 400px;
   padding: 2%;
   margin: 2%;
