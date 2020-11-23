@@ -248,9 +248,6 @@ img {
     position: relative;
     border: none;
 }
-.nav-link :hover{
-    color: @BackgroundColor;
-}
 .fab{
     color: @FontColor_Primary;
     font-size: 2rem;
@@ -268,7 +265,13 @@ h1 , h2 , h3 , h4 , h5 , h6{
 }
 .section-footer{
     .section;
+    font-size: smaller;
     margin-bottom: @margin;
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+}
+.section-footer:hover{
+    background-color: @ShapeColor1_Secondary;
 }
 
 /* Animation */

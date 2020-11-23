@@ -252,9 +252,6 @@ img {
   position: relative;
   border: none;
 }
-.nav-link :hover {
-  color: #05091f;
-}
 .fab {
   color: #ffeff3;
   font-size: 2rem;
@@ -290,11 +287,15 @@ h6 {
   padding: 2%;
   margin-top: 2%;
   border-radius: 15px;
-  transition: background-color 0.5s;
-  -webkit-transition: background-color 0.5s;
   animation: Animation 2s;
   animation-fill-mode: forwards;
+  font-size: smaller;
   margin-bottom: 2%;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+}
+.section-footer:hover {
+  background-color: #da1c4b;
 }
 /* Animation */
 @keyframes Animation {
