@@ -247,14 +247,14 @@ img {
   border-color: #ffeff3;
   transition: background-color 0.5s;
   -webkit-transition: background-color 0.5s;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   position: relative;
   border: none;
 }
 .fab {
   color: #ffeff3;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 h1,
 h2,
