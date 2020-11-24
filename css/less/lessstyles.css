@@ -321,3 +321,11 @@ h6 {
     transform: rotate(2deg);
   }
 }
+@keyframes progress-bar-stripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1rem 0;
+  }
+}
