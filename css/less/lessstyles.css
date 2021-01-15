@@ -43,7 +43,26 @@ img {
 .flex-center {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+}
+.top-sharp {
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+}
+.bottom-sharp {
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+.left-sharp {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+.right-sharp {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.links {
+  width: 10%;
 }
 .card {
   margin: 15px !important;
@@ -59,8 +78,11 @@ img {
   border-radius: 15px;
   margin: 15px !important;
 }
+.nav {
+  justify-content: center;
+}
 .nav-item {
-  color: #ffeff3 !important;
+  color: #ad143a !important;
   transition: color 0.5s;
   -webkit-transition: color 0.5s;
 }
@@ -121,15 +143,12 @@ img {
   margin-top: 90px;
 }
 .section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   font-family: secondaryFont;
   font-size: 1rem;
   text-justify: newspaper;
-  text-align: justify;
+  text-align: center;
   color: #ffeff3;
   background-color: #ad143a;
   padding: 2%;
@@ -140,14 +159,67 @@ img {
   animation: Animation 2s;
   animation-fill-mode: forwards;
 }
-.section:hover {
+.vertical-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: secondaryFont;
+  font-size: 1rem;
+  text-justify: newspaper;
+  text-align: center;
+  color: #ffeff3;
+  background-color: #ad143a;
+  padding: 2%;
+  margin-top: 2%;
+  border-radius: 15px;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  animation: Animation 2s;
+  animation-fill-mode: forwards;
+  background-color: #05091f !important;
+  color: #ad143a;
+  border: solid 0.2rem #ad143a;
+}
+.horizontal-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: secondaryFont;
+  font-size: 1rem;
+  text-justify: newspaper;
+  text-align: center;
+  color: #ffeff3;
+  background-color: #ad143a;
+  padding: 2%;
+  margin-top: 2%;
+  border-radius: 15px;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  animation: Animation 2s;
+  animation-fill-mode: forwards;
+}
+.horizontal-section:hover {
   background-color: #da1c4b;
 }
-.section p {
+.vertical-section:hover {
+  background-color: #da1c4b;
+}
+.vertical-section a:hover {
+  background-color: #ffeff3;
+}
+.vertical-section a:active {
+  background-color: #ffeff3;
+}
+.horizontal-section p {
   width: 100%;
   text-align: center;
+  letter-spacing: 0.096rem;
 }
-.section p::first-letter {
+.horizontal-section p::first-letter {
   font-size: 1.5srem;
 }
 .text-section {
@@ -253,7 +325,7 @@ img {
   border: none;
 }
 .fab {
-  color: #ffeff3;
+  color: #ad143a;
   font-size: 1.5rem;
 }
 h1,
@@ -262,15 +334,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: primaryFont;
-}
-.section a:hover {
-  background-color: #ad143a;
-  color: #ffeff3;
-}
-.section a:active {
-  background-color: white;
-  color: #ad143a;
+  font-weight: bold;
 }
 .section-footer {
   display: flex;
@@ -281,7 +345,7 @@ h6 {
   font-family: secondaryFont;
   font-size: 1rem;
   text-justify: newspaper;
-  text-align: justify;
+  text-align: center;
   color: #ffeff3;
   background-color: #ad143a;
   padding: 2%;

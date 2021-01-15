@@ -58,7 +58,26 @@ img {
 .flex-center{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+}
+.top-sharp {
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
+.bottom-sharp {
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+.left-sharp {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+.right-sharp {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+.links {
+    width: 10%;
 }
 .card{
     margin: 15px !important;
@@ -74,8 +93,11 @@ img {
     border-radius: 15px;
     margin: 15px !important;
 }
+.nav{
+    justify-content: center;
+}
 .nav-item{
-    color: @FontColor_Primary !important;
+    color: @ShapeColor1_Primary !important;
     transition: color .5s;
     -webkit-transition: color .5s;
 }
@@ -133,13 +155,12 @@ img {
     margin-top: 90px;
 }
 .section{
-    .d-flex-row;
     align-items: center;
     justify-content: center;
     font-family: secondaryFont;
     font-size: 1rem;
     text-justify: newspaper;
-    text-align: justify;
+    text-align: center;
     color: @FontColor_Primary;
     background-color: @ShapeColor1_Primary;
 
@@ -153,14 +174,35 @@ img {
     animation: Animation 2s;
     animation-fill-mode: forwards;
 }
-.section:hover{
+.vertical-section{
+    .d-flex-column;
+    .section;
+    background-color: @BackgroundColor !important;
+    color: @ShapeColor1_Primary;
+    border: solid .2rem @ShapeColor1_Primary;
+}
+.horizontal-section{
+    .d-flex-row;
+    .section;
+}
+.horizontal-section:hover{
     background-color: @ShapeColor1_Secondary;
 }
-.section p{
+.vertical-section:hover{
+    background-color: @ShapeColor1_Secondary;
+}
+.vertical-section a:hover{
+    background-color: @FontColor_Primary;
+}
+.vertical-section a:active{
+    background-color: @FontColor_Primary;
+}
+.horizontal-section p{
     width:  @width;
     text-align: center;
+    letter-spacing: 0.096rem;
 }
-.section p::first-letter{
+.horizontal-section p::first-letter{
     font-size: 1.5srem;
 }
 .text-section{
@@ -249,22 +291,14 @@ img {
     border: none;
 }
 .fab{
-    color: @FontColor_Primary;
+    color: @ShapeColor1_Primary;
     font-size: 1.5rem;
 }
 h1 , h2 , h3 , h4 , h5 , h6{
-    font-family: primaryFont;
-}
-.section a:hover{
-    background-color: @ShapeColor1_Primary;
-    color: @FontColor_Primary;
-}
-.section a:active{
-    background-color: white;
-    color: @ShapeColor1_Primary;
+    font-weight: bold;
 }
 .section-footer{
-    .section;
+    .horizontal-section;
     font-size: smaller;
     margin-bottom: @margin;
     transition: background-color .5s;
