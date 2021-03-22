@@ -1,11 +1,11 @@
 /* Color variables */
-@BackgroundColor: #05091f;
-@ShapeColor1_Primary: #ad143a;
-@ShapeColor1_Secondary: #da1c4b;
-@ShapeColor2_Primary: #946b14;
-@ShapeColor2_Secondary: #c78a07;
-@FontColor_Primary: #ffeff3;
-@FontColor_Secondary: #ffb7c9;
+@BackgroundColor: #2b2e4a;
+@HeaderFooter_Primary: #eeeeee;
+@HeaderFooter_Hover: #fda403;
+@Section_Primary: #eeeeee;
+@Section_Hover: #fda403;
+@FontColor_Primary: #2b2e4a;
+@FontColor_Hover: #d41740;
 @GreenColor: #126d43;
 @BlueColor: #15616b;
 @RedColor: #d41740;
@@ -23,7 +23,7 @@
     src: url(../../fonts/Alegreya-Bold.otf);
 }
 @font-face{
-    font-family: secondaryFont;
+    font-family: SecondaryFont;
     src: url(../../fonts/Lato-Light.ttf);
 }
 body{
@@ -43,10 +43,10 @@ img {
     height: 400px;
 }
 .bg-light{
-    background-color: @ShapeColor1_Primary !important;
+    background-color: @HeaderFooter_Primary !important;
 }
 .bg-light:hover{
-    background-color: @ShapeColor1_Secondary !important;
+    background-color: @HeaderFooter_Hover !important;
     transition: background-color .5s;
     -webkit-transition: background-color .5s;
 }
@@ -87,7 +87,7 @@ img {
     border-style: solid;
     height: 1.2rem;
     border-color: @BackgroundColor;
-}
+} 
 .navbar{
     color: @FontColor_Primary !important;
     border-radius: 15px;
@@ -97,7 +97,7 @@ img {
     justify-content: center;
 }
 .nav-item{
-    color: @ShapeColor1_Primary !important;
+    color: @HeaderFooter_Primary !important;
     transition: color .5s;
     -webkit-transition: color .5s;
 }
@@ -105,7 +105,7 @@ img {
     color: @BackgroundColor !important;
 }
 .navbar:hover{
-    background-color: @ShapeColor1_Secondary;
+    background-color: @HeaderFooter_Hover;
     transition: background-color .5s;
     -webkit-transition: background-color .5s;
 }
@@ -157,12 +157,12 @@ img {
 .section{
     align-items: center;
     justify-content: center;
-    font-family: secondaryFont;
+    font-family: SecondaryFont;
     font-size: 1rem;
     text-justify: newspaper;
     text-align: center;
     color: @FontColor_Primary;
-    background-color: @ShapeColor1_Primary;
+    background-color: @HeaderFooter_Primary;
 
     padding: @padding;
     margin-top: @margin;
@@ -177,19 +177,19 @@ img {
 .vertical-section{
     .d-flex-column;
     .section;
-    background-color: @BackgroundColor !important;
-    color: @ShapeColor1_Primary;
-    border: solid .2rem @ShapeColor1_Primary;
+    background-color: @BackgroundColor;
+    color: @HeaderFooter_Primary;
+    border: solid .2rem @HeaderFooter_Primary;
 }
 .horizontal-section{
     .d-flex-row;
     .section;
 }
 .horizontal-section:hover{
-    background-color: @ShapeColor1_Secondary;
+    background-color: @HeaderFooter_Hover;
 }
 .vertical-section:hover{
-    background-color: @ShapeColor1_Secondary;
+    background-color: @HeaderFooter_Hover;
 }
 .vertical-section a:hover{
     background-color: @FontColor_Primary;
@@ -209,12 +209,12 @@ img {
     .d-flex-row;
     align-items: center;
     justify-content: center;
-    font-family: secondaryFont;
+    font-family: SecondaryFont;
     font-size: 1rem;
     text-justify: newspaper;
     text-align: justify;
     color: @BackgroundColor;
-    background-color: @ShapeColor2_Primary;
+    background-color: @Section_Primary;
 
     padding: @padding;
     margin-top: @margin;
@@ -224,15 +224,15 @@ img {
     -webkit-transition: background-color .5s;
 }
 .text-section:hover {
-    background-color: @ShapeColor2_Secondary;
+    background-color: @Section_Hover;
 }
 .text-class{
   text-align: justify !important;
-  font-size: .85rem;
+  font-size: 1rem;
 }
 .sample-section{
     .d-flex-row;
-    font-family: secondaryFont;
+    font-family: SecondaryFont;
     font-size: 1rem;
     text-justify: newspaper;
     text-align: justify;
@@ -250,9 +250,9 @@ img {
 }
 .skill-section{
     .d-flex-row;
-    font-family: secondaryFont;
+    font-family: SecondaryFont;
     font-size: 1rem;
-    background-color: @ShapeColor2_Primary;
+    background-color: @Section_Primary;
     color: @BackgroundColor;
     padding: @padding;
     margin-top: @margin;
@@ -261,7 +261,16 @@ img {
     -webkit-transition: background-color 0.5s;
 }
 .skill-section:hover{
-    background-color: @ShapeColor2_Secondary;
+    background-color: @Section_Hover;
+}
+.skill-section .badge {
+    font-family: Hover;
+    font-size: .65rem;
+    font-weight: bold;
+}
+.badge {
+    color: @HeaderFooter_Primary;
+    background-color: @BackgroundColor;
 }
 .green{
     background-color: @GreenColor !important;
@@ -279,9 +288,15 @@ img {
 }
 .progress-bar{
     font-weight: bold;
+    background-color: @HeaderFooter_Hover;
     color: @BackgroundColor;
     text-align: left !important;
     text-indent: 1%;
+}
+.progress-bar p{
+    font-family: Hover;
+    font-size: .65rem;
+    font-weight: bold;
 }
 .nav-link{
     .pic-frame;
@@ -291,7 +306,7 @@ img {
     border: none;
 }
 .fab{
-    color: @ShapeColor1_Primary;
+    color: @HeaderFooter_Primary;
     font-size: 1.5rem;
 }
 h1 , h2 , h3 , h4 , h5 , h6{
@@ -305,7 +320,7 @@ h1 , h2 , h3 , h4 , h5 , h6{
     -webkit-transition: background-color .5s;
 }
 .section-footer:hover{
-    background-color: @ShapeColor1_Secondary;
+    background-color: @HeaderFooter_Hover;
 }
 
 /* Animation */

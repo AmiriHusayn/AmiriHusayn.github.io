@@ -6,7 +6,7 @@
   src: url(../../fonts/Alegreya-Bold.otf);
 }
 @font-face {
-  font-family: secondaryFont;
+  font-family: SecondaryFont;
   src: url(../../fonts/Lato-Light.ttf);
 }
 body {
@@ -14,7 +14,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #05091f;
+  background-color: #2b2e4a;
   font-size: 100%;
 }
 img {
@@ -28,10 +28,10 @@ img {
   height: 400px;
 }
 .bg-light {
-  background-color: #ad143a !important;
+  background-color: #eeeeee !important;
 }
 .bg-light:hover {
-  background-color: #da1c4b !important;
+  background-color: #fda403 !important;
   transition: background-color 0.5s;
   -webkit-transition: background-color 0.5s;
 }
@@ -71,10 +71,10 @@ img {
   margin: 15px !important;
   border-style: solid;
   height: 1.2rem;
-  border-color: #05091f;
+  border-color: #2b2e4a;
 }
 .navbar {
-  color: #ffeff3 !important;
+  color: #2b2e4a !important;
   border-radius: 15px;
   margin: 15px !important;
 }
@@ -82,15 +82,15 @@ img {
   justify-content: center;
 }
 .nav-item {
-  color: #ad143a !important;
+  color: #eeeeee !important;
   transition: color 0.5s;
   -webkit-transition: color 0.5s;
 }
 .nav-item:hover {
-  color: #05091f !important;
+  color: #2b2e4a !important;
 }
 .navbar:hover {
-  background-color: #da1c4b;
+  background-color: #fda403;
   transition: background-color 0.5s;
   -webkit-transition: background-color 0.5s;
 }
@@ -119,7 +119,7 @@ img {
   padding: 2px;
   border-radius: 100%;
   border: 2px solid;
-  border-color: #ffeff3;
+  border-color: #2b2e4a;
   transition: background-color 0.5s;
   -webkit-transition: background-color 0.5s;
 }
@@ -129,7 +129,7 @@ img {
   border-radius: 100%;
 }
 .pic-frame:hover {
-  background-color: #ffeff3;
+  background-color: #2b2e4a;
 }
 .author {
   display: flex;
@@ -145,12 +145,12 @@ img {
 .section {
   align-items: center;
   justify-content: center;
-  font-family: secondaryFont;
+  font-family: SecondaryFont;
   font-size: 1rem;
   text-justify: newspaper;
   text-align: center;
-  color: #ffeff3;
-  background-color: #ad143a;
+  color: #2b2e4a;
+  background-color: #eeeeee;
   padding: 2%;
   margin-top: 2%;
   border-radius: 15px;
@@ -165,12 +165,12 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-family: secondaryFont;
+  font-family: SecondaryFont;
   font-size: 1rem;
   text-justify: newspaper;
   text-align: center;
-  color: #ffeff3;
-  background-color: #ad143a;
+  color: #2b2e4a;
+  background-color: #eeeeee;
   padding: 2%;
   margin-top: 2%;
   border-radius: 15px;
@@ -178,9 +178,9 @@ img {
   -webkit-transition: background-color 0.5s;
   animation: Animation 2s;
   animation-fill-mode: forwards;
-  background-color: #05091f !important;
-  color: #ad143a;
-  border: solid 0.2rem #ad143a;
+  background-color: #2b2e4a;
+  color: #eeeeee;
+  border: solid 0.2rem #eeeeee;
 }
 .horizontal-section {
   display: flex;
@@ -188,12 +188,12 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-family: secondaryFont;
+  font-family: SecondaryFont;
   font-size: 1rem;
   text-justify: newspaper;
   text-align: center;
-  color: #ffeff3;
-  background-color: #ad143a;
+  color: #2b2e4a;
+  background-color: #eeeeee;
   padding: 2%;
   margin-top: 2%;
   border-radius: 15px;
@@ -203,16 +203,16 @@ img {
   animation-fill-mode: forwards;
 }
 .horizontal-section:hover {
-  background-color: #da1c4b;
+  background-color: #fda403;
 }
 .vertical-section:hover {
-  background-color: #da1c4b;
+  background-color: #fda403;
 }
 .vertical-section a:hover {
-  background-color: #ffeff3;
+  background-color: #2b2e4a;
 }
 .vertical-section a:active {
-  background-color: #ffeff3;
+  background-color: #2b2e4a;
 }
 .horizontal-section p {
   width: 100%;
@@ -228,12 +228,12 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-family: secondaryFont;
+  font-family: SecondaryFont;
   font-size: 1rem;
   text-justify: newspaper;
   text-align: justify;
-  color: #05091f;
-  background-color: #946b14;
+  color: #2b2e4a;
+  background-color: #eeeeee;
   padding: 2%;
   margin-top: 2%;
   border-radius: 15px;
@@ -241,17 +241,17 @@ img {
   -webkit-transition: background-color 0.5s;
 }
 .text-section:hover {
-  background-color: #c78a07;
+  background-color: #fda403;
 }
 .text-class {
   text-align: justify !important;
-  font-size: 0.85rem;
+  font-size: 1rem;
 }
 .sample-section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  font-family: secondaryFont;
+  font-family: SecondaryFont;
   font-size: 1rem;
   text-justify: newspaper;
   text-align: justify;
@@ -271,10 +271,10 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  font-family: secondaryFont;
+  font-family: SecondaryFont;
   font-size: 1rem;
-  background-color: #946b14;
-  color: #05091f;
+  background-color: #eeeeee;
+  color: #2b2e4a;
   padding: 2%;
   margin-top: 2%;
   border-radius: 15px;
@@ -282,7 +282,16 @@ img {
   -webkit-transition: background-color 0.5s;
 }
 .skill-section:hover {
-  background-color: #c78a07;
+  background-color: #fda403;
+}
+.skill-section .badge {
+  font-family: Hover;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+.badge {
+  color: #eeeeee;
+  background-color: #2b2e4a;
 }
 .green {
   background-color: #126d43 !important;
@@ -296,13 +305,19 @@ img {
 .progress {
   padding: 0 !important;
   margin: 5px !important;
-  background-color: #05091f;
+  background-color: #2b2e4a;
 }
 .progress-bar {
   font-weight: bold;
-  color: #05091f;
+  background-color: #fda403;
+  color: #2b2e4a;
   text-align: left !important;
   text-indent: 1%;
+}
+.progress-bar p {
+  font-family: Hover;
+  font-size: 0.65rem;
+  font-weight: bold;
 }
 .nav-link {
   display: flex;
@@ -316,7 +331,7 @@ img {
   padding: 2px;
   border-radius: 100%;
   border: 2px solid;
-  border-color: #ffeff3;
+  border-color: #2b2e4a;
   transition: background-color 0.5s;
   -webkit-transition: background-color 0.5s;
   width: 35px;
@@ -325,7 +340,7 @@ img {
   border: none;
 }
 .fab {
-  color: #ad143a;
+  color: #eeeeee;
   font-size: 1.5rem;
 }
 h1,
@@ -342,12 +357,12 @@ h6 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-family: secondaryFont;
+  font-family: SecondaryFont;
   font-size: 1rem;
   text-justify: newspaper;
   text-align: center;
-  color: #ffeff3;
-  background-color: #ad143a;
+  color: #2b2e4a;
+  background-color: #eeeeee;
   padding: 2%;
   margin-top: 2%;
   border-radius: 15px;
@@ -359,7 +374,7 @@ h6 {
   -webkit-transition: background-color 0.5s;
 }
 .section-footer:hover {
-  background-color: #da1c4b;
+  background-color: #fda403;
 }
 /* Animation */
 @keyframes Animation {
