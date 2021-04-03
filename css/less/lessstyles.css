@@ -153,7 +153,7 @@ img {
   background-color: #eeeeee;
   padding: 2%;
   margin-top: 2%;
-  border-radius: 15px;
+  border-radius: 0.5rem;
   transition: background-color 0.5s;
   -webkit-transition: background-color 0.5s;
   animation: Animation 2s;
@@ -173,7 +173,7 @@ img {
   background-color: #eeeeee;
   padding: 2%;
   margin-top: 2%;
-  border-radius: 15px;
+  border-radius: 0.5rem;
   transition: background-color 0.5s;
   -webkit-transition: background-color 0.5s;
   animation: Animation 2s;
@@ -196,7 +196,7 @@ img {
   background-color: #eeeeee;
   padding: 2%;
   margin-top: 2%;
-  border-radius: 15px;
+  border-radius: 0.5rem;
   transition: background-color 0.5s;
   -webkit-transition: background-color 0.5s;
   animation: Animation 2s;
@@ -236,7 +236,7 @@ img {
   background-color: #eeeeee;
   padding: 2%;
   margin-top: 2%;
-  border-radius: 15px;
+  border-radius: 0.5rem;
   transition: background-color 0.5s;
   -webkit-transition: background-color 0.5s;
 }
@@ -258,7 +258,7 @@ img {
   height: 400px;
   padding: 2%;
   margin: 2%;
-  border-radius: 15px;
+  border-radius: 0.5rem;
 }
 .sample-art {
   width: 250px;
@@ -277,7 +277,7 @@ img {
   color: #2b2e4a;
   padding: 2%;
   margin-top: 2%;
-  border-radius: 15px;
+  border-radius: 0.5rem;
   transition: background-color 0.5s;
   -webkit-transition: background-color 0.5s;
 }
@@ -318,6 +318,13 @@ img {
   font-family: Hover;
   font-size: 0.65rem;
   font-weight: bold;
+}
+.course {
+  border: 0.12rem solid;
+  border-color: #2b2e4a;
+  border-radius: 0.5rem;
+  text-indent: 1rem;
+  font-size: 0.8rem;
 }
 .nav-link {
   display: flex;
@@ -365,7 +372,7 @@ h6 {
   background-color: #eeeeee;
   padding: 2%;
   margin-top: 2%;
-  border-radius: 15px;
+  border-radius: 0.5rem;
   animation: Animation 2s;
   animation-fill-mode: forwards;
   font-size: smaller;
