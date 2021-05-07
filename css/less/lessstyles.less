@@ -1,9 +1,11 @@
 /* Color variables */
 @BackgroundColor: #2b2e4a;
+@SectionColor: #414672;
 @HeaderFooter_Primary: #eeeeee;
 @HeaderFooter_Hover: #fda403;
 @Section_Primary: #eeeeee;
 @Section_Hover: #fda403;
+@Message_Color: #cecece;
 @FontColor_Primary: #2b2e4a;
 @FontColor_Hover: #d41740;
 @GreenColor: #126d43;
@@ -29,7 +31,7 @@
 body{
     .d-flex-row;
     justify-content: center;
-    background-color: @BackgroundColor;
+    background-color: @Section_Primary;
     font-size: 100%;
 }
 img {
@@ -76,6 +78,24 @@ img {
     border-top-right-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
 }
+.top-none {
+    border-top: none !important;
+}
+.bottom-none {
+    border-bottom: none !important;
+}
+.left-none {
+    border-left: none !important;
+}
+.right-none {
+    border-right: none !important;
+}
+.w-15 {
+    width: 15%;
+}
+.w-85 {
+    width: 85%;
+}
 .links {
     width: 10%;
 }
@@ -88,27 +108,6 @@ img {
     height: 1.2rem;
     border-color: @BackgroundColor;
 } 
-.navbar{
-    color: @FontColor_Primary !important;
-    border-radius: 15px;
-    margin: 15px !important;
-}
-.nav{
-    justify-content: center;
-}
-.nav-item{
-    color: @HeaderFooter_Primary !important;
-    transition: color .5s;
-    -webkit-transition: color .5s;
-}
-.nav-item:hover{
-    color: @BackgroundColor !important;
-}
-.navbar:hover{
-    background-color: @HeaderFooter_Hover;
-    transition: background-color .5s;
-    -webkit-transition: background-color .5s;
-}
 .d-flex-row{
     display: flex;
     flex-direction: row;
@@ -124,35 +123,18 @@ img {
 }
 .pic-frame{
     .d-flex-row;
-    position: absolute;
     align-items: center;
     justify-content: center;
-    width: 75px;
-    height: 75px;
-    padding: 2px;
-    border-radius: 100%;
-    border: 2px solid;
-    border-color: @FontColor_Primary;
-
-    transition: background-color .5s;
-    -webkit-transition: background-color .5s;
-}
-.pic-frame img{
-    width: @width;
-    height: @width;
     border-radius: 100%;
 }
-.pic-frame:hover{
-    background-color: @FontColor_Primary;
-}
-.author{
-    .d-flex-column;
-    position: relative;
-    width: @width;
-    align-items: center;
-}
-.author h2{
-    margin-top: 90px;
+.pic-frame{
+    img{
+        width: 85px;
+        height: 85px;
+        border: solid 0.1rem @Section_Primary;
+        border-radius: 100%;
+        padding: 2px;
+    }
 }
 .section{
     align-items: center;
@@ -161,74 +143,100 @@ img {
     font-size: 1rem;
     text-justify: newspaper;
     text-align: center;
-    color: @FontColor_Primary;
-    background-color: @HeaderFooter_Primary;
-
     padding: @padding;
-    margin-top: @margin;
     border-radius: @borderRadius;
-
     transition: background-color .5s;
     -webkit-transition: background-color .5s;
-
-    animation: Animation 2s;
-    animation-fill-mode: forwards;
 }
-.vertical-section{
-    .d-flex-column;
-    .section;
+.blue-section{
     background-color: @BackgroundColor;
-    color: @HeaderFooter_Primary;
+    color: @Section_Primary;
+}
+.white-section{
+    background-color: @Section_Primary;
+    color: @BackgroundColor;
+    p{
+        color: @BackgroundColor;
+    }
+    h1,h2,h3,h4,h5,h6 {
+        color: @BackgroundColor;
+    }
+}
+.contact-section{
+    .section;
     border: solid .2rem @HeaderFooter_Primary;
+    a{
+        background-color: @FontColor_Primary;  
+        transition: background-color 1s;
+        -webkit-transition: background-color 1s;
+    }
+    a:hover{
+        background-color: @Section_Hover;
+    }
+    a:active{
+        background-color: @Section_Hover;
+    }
+    .nav{
+        justify-content: center;
+    }
+    .nav-item{
+        .nav-link{
+            .d-flex-row;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            position: relative;
+            border: none;
+        }
+    }
 }
 .horizontal-section{
-    .d-flex-row;
     .section;
-}
-.horizontal-section:hover{
-    background-color: @HeaderFooter_Hover;
-}
-.vertical-section:hover{
-    background-color: @HeaderFooter_Hover;
-}
-.vertical-section a:hover{
-    background-color: @FontColor_Primary;
-}
-.vertical-section a:active{
-    background-color: @FontColor_Primary;
-}
-.horizontal-section p{
-    width:  @width;
-    text-align: center;
-    letter-spacing: 0.096rem;
-}
-.horizontal-section p::first-letter{
-    font-size: 1.5srem;
+    padding: 0px;
+    border: solid .2rem @HeaderFooter_Primary;
+    p{
+        font-size: 80%;
+        width:  @width;
+        text-align: center;
+        letter-spacing: 0.096rem;
+    }
+    .nav-item{
+        a{
+            color: @SectionColor;
+            font-size: 1rem;
+            font-weight: bold;
+            padding-right: .5rem;
+            padding-left: .5rem;
+        }
+        .nav-link.active{
+            .top-sharp;
+            background-color: @BackgroundColor !important;
+            color: @Section_Primary;
+        }
+    }
+    .nav-item:hover{
+        color: @BackgroundColor !important;
+    }
 }
 .text-section{
     .d-flex-row;
     align-items: center;
     justify-content: center;
     font-family: SecondaryFont;
-    font-size: 1rem;
+    font-size: 1.2rem !important;
     text-justify: newspaper;
     text-align: justify;
-    color: @BackgroundColor;
-    background-color: @Section_Primary;
-
-    padding: @padding;
-    margin-top: @margin;
     border-radius: @borderRadius;
-
-    transition: background-color .5s;
-    -webkit-transition: background-color .5s;
-}
-.text-section:hover {
-    background-color: @Section_Hover;
 }
 .text-class{
   text-align: justify !important;
   font-size: 1rem;
+  p::first-letter{
+    font-size: 1.5rem;
+  }
 }
 .sample-section{
     .d-flex-row;
@@ -237,8 +245,6 @@ img {
     text-justify: newspaper;
     text-align: justify;
     height: 400px;
-    padding: @padding;
-    margin: @margin;
     border-radius: @borderRadius;
 }
 .sample-art{
@@ -248,29 +254,20 @@ img {
     animation-fill-mode: both;
     animation-iteration-count: infinite;
 }
-.skill-section{
-    .d-flex-row;
-    font-family: SecondaryFont;
-    font-size: 1rem;
-    background-color: @Section_Primary;
-    color: @BackgroundColor;
-    padding: @padding;
-    margin-top: @margin;
-    border-radius: @borderRadius;
-    transition: background-color 0.5s;
-    -webkit-transition: background-color 0.5s;
-}
-.skill-section:hover{
-    background-color: @Section_Hover;
-}
-.skill-section .badge {
-    font-family: Hover;
-    font-size: .65rem;
-    font-weight: bold;
-}
 .badge {
     color: @HeaderFooter_Primary;
     background-color: @BackgroundColor;
+}
+.skill-section{
+    .d-flex-column;
+    font-family: SecondaryFont;
+    font-size: 1rem;
+    color: @Section_Primary;
+    border-radius: @borderRadius;
+    .badge {
+        font-size: .65rem;
+        font-weight: bold;
+    }
 }
 .green{
     background-color: @GreenColor !important;
@@ -292,25 +289,26 @@ img {
     color: @BackgroundColor;
     text-align: left !important;
     text-indent: 1%;
-}
-.progress-bar p{
-    font-family: Hover;
-    font-size: .65rem;
-    font-weight: bold;
-}
-.course {
+    p{
+        font-family: SecondaryFont;
+        font-size: .65rem;
+        font-weight: bold;
+    }
+} 
+.project {
+    .white-section;
+    text-decoration: none;
     border: 0.12rem solid;
     border-color: @BackgroundColor;
     border-radius: @borderRadius;
     text-indent: 1rem;
     font-size: 0.8rem;
+    transition: background-color .2s;
+    -webkit-transition: background-color .2s;
 }
-.nav-link{
-    .pic-frame;
-    width: 35px;
-    height: 35px;
-    position: relative;
-    border: none;
+.project:hover {
+    text-decoration: none;
+    .blue-section;
 }
 .fab{
     color: @HeaderFooter_Primary;
@@ -319,24 +317,12 @@ img {
 h1 , h2 , h3 , h4 , h5 , h6{
     font-weight: bold;
 }
-.section-footer{
-    .horizontal-section;
+.message{
     font-size: smaller;
-    margin-bottom: @margin;
-    transition: background-color .5s;
-    -webkit-transition: background-color .5s;
-}
-.section-footer:hover{
-    background-color: @HeaderFooter_Hover;
+    color: @Message_Color;
 }
 
 /* Animation */
-@keyframes Animation{
-    to{
-        padding-bottom: 5%;
-        padding-top: 5%;
-    }
-}
 @keyframes SampleArtAnimation{
     0%{
         width: 250px;

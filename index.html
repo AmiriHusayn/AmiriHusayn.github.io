@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 
 <head>
   <!-- Required meta tags -->
@@ -24,267 +24,185 @@
 <body>
   <div class="container">
     <!-- Header -->
+    <div class="message d-flex-row justify-content-center align-items-center p-0 mt-1 mb-0">
+      <p class="m-1">Imam Mahdi (As) declared : We are aware of all your news and none of your actions is hidden from
+        us.
+      </p>
+    </div>
     <div class="row flex-center">
-      <div class="horizontal-section right-sharp justify-content-start col-xl-11 col-lg-11 col-md-11 col-sm-10 col-10">
-        <div class="author">
-          <div class="pic-frame">
-            <img src="img/AmiriHusayn.png"/>
+      <!-- Profile -->
+      <div class="horizontal-section blue-section bottom-none d-flex-row p-0 justify-content-start col-12">
+        <div class="pic-frame right-sharp left-sharp p-2 m-0 justify-content-center">
+          <img src="img/AmiriHusayn.png" /></div>
+          <div class="d-flex-column ml-4">
+            <h1 class="text-left">AmiriHusayn</h1>
+            <h5 class="text-left">Indie Game Developer</h5>
+            <p class="text-left">Open to work</p>
           </div>
-          <h2>AmiriHusayn</h2>
-          <p>Indie Game Developer
-          </p>
+      </div>
+      <!-- Navbar -->
+      <div class="horizontal-section white-section top-sharp top-none bottom-sharp bottom-none col-12">
+        <!-- Tab links -->
+        <ul class="nav nav-pills m-0 w-100 justify-content-center" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-aboutme-tab" data-toggle="pill" href="#pills-aboutme" role="tab"
+              aria-controls="pills-aboutme" aria-selected="true">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-experience-tab" data-toggle="pill" href="#pills-experience" role="tab"
+              aria-controls="pills-experience" aria-selected="false">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-projects-tab" data-toggle="pill" href="#pills-projects" role="tab"
+              aria-controls="pills-projects" aria-selected="false">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+              aria-controls="pills-contact" aria-selected="false">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Content -->
+      <div class="horizontal-section white-section top-sharp top-none justify-content-between mt-2 p-3 col-12">
+        <div class="d-flex-column w-100">
+          <!-- Tab contents -->
+          <div class="tab-content align-items-center justify-content-center w-100" id="pills-tabContent">
+            <!-- About me -->
+            <div class="tab-pane fade show active" id="pills-aboutme" role="tabpanel"
+              aria-labelledby="pills-aboutme-tab">
+              <div class="text-section">
+                <p class="text-class">
+                  Since childhood I've been in love with Game and Animation.
+                  For preparation of this hard journey,
+                  I studied Software Engineering and along it I developed Art,
+                  Design and Animation skills gradually. After a long time,
+                  I noticed that fighting in several sides doesn't make progress and
+                  I should take a skill and try to be professional in it.
+                  I think I'm surrounded and should do something.
+                  Always God blessed me and helped me. So I will try...
+                </p>
+              </div>
+            </div>
+            <!-- Experience -->
+            <div class="tab-pane fade" id="pills-experience" role="tabpanel" aria-labelledby="pills-experience-tab">
+              <div class="skill-section">
+                <!-- Animation -->
+                <div class="progress col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                    <p class="m-0">Animation</p>
+                  </div>
+                </div>
+                <!-- Design -->
+                <div class="progress col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                    <p class="m-0">Design</p>
+                  </div>
+                </div>
+                <!-- Development -->
+                <div class="progress col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 35%">
+                    <p class="m-0">Development</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Projects -->
+            <div class="tab-pane fade" id="pills-projects" role="tabpanel" aria-labelledby="pills-projects-tab">
+              <div class="skill-section align-items-center">
+                <a class="project w-50 text-center mt-1 mb-1" href="https://github.com/amirihusayn/HonorOfSoldiership">Honor Of Soldiership</a>
+                <a class="project w-50 text-center mt-1 mb-1" href="https://github.com/amirihusayn/TheKingdomOfDarkness">The Kingdom Of Darkness</a>
+              </div>
+            </div>
+            <!-- Links -->
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <div class="contact-section d-flex-row top-sharp col-12">
+                <nav class="nav">
+                  <!-- Github -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/amirihusayn" target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </li>
+                  <!-- Itch -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://amirihusayn.itch.io" target="_blank">
+                      <i class="fab fa-itch-io"></i>
+                    </a>
+                  </li>
+                  <!-- Linkedin -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/amirihusayn" target="_blank">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <!-- Instagram -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/amirihusayn" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <!-- Telegram -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://t.me/amirihusayn" target="_blank">
+                      <i class="fab fa-telegram"></i>
+                    </a>
+                  </li>
+                  <!-- Virgool -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://virgool.io/@AmiriHusayn" target="_blank">
+                      <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="30" height="30"
+                        viewBox="0 0 9.2604168 9.2604168" version="1.1" id="svg859"
+                        inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)" sodipodi:docname="virgool.svg">
+                        <defs id="defs853">
+                          <marker style="overflow:visible" id="marker1754" refX="0" refY="0" orient="auto"
+                            inkscape:stockid="Arrow1Lstart" inkscape:isstock="true">
+                            <path transform="matrix(0.8,0,0,0.8,10,0)"
+                              style="fill-rule:evenodd;stroke:#eeeeee;stroke-width:1pt" d="M 0,0 5,-5 -12.5,0 5,5 Z"
+                              id="path1752" />
+                          </marker>
+                          <marker style="overflow:visible" id="marker1738" refX="0" refY="0" orient="auto"
+                            inkscape:stockid="Arrow1Lstart" inkscape:isstock="true">
+                            <path transform="matrix(0.8,0,0,0.8,10,0)"
+                              style="fill-rule:evenodd;stroke:#eeeeee;stroke-width:1pt" d="M 0,0 5,-5 -12.5,0 5,5 Z"
+                              id="path1736" />
+                          </marker>
+                          <marker style="overflow:visible" id="Arrow1Lstart" refX="0" refY="0" orient="auto"
+                            inkscape:stockid="Arrow1Lstart" inkscape:isstock="true">
+                            <path transform="matrix(0.8,0,0,0.8,10,0)"
+                              style="fill-rule:evenodd;stroke:#eeeeee;stroke-width:1pt" d="M 0,0 5,-5 -12.5,0 5,5 Z"
+                              id="path1466" />
+                          </marker>
+                        </defs>
+                        <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1">
+                          <g id="g2384" style="opacity:1"
+                            transform="matrix(0.26901547,0,0,0.26901547,-0.07742942,-0.10987485)">
+                            <path id="path2386"
+                              style="color:#eeeeee;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#eeeeee;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#eeeeee;solid-opacity:1;vector-effect:none;fill:#eeeeee;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.83054;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#eeeeee;stop-opacity:1"
+                              d="M 66.541016,4.0820312 66.105469,4.9082031 65.330078,6.3847656 59.394531,17.724609 c -2.433093,0.437107 -4.905985,1.051062 -7.417969,1.955079 -16.31304,5.884057 -25.871545,18.449671 -27.128906,36.052734 -1.218343,16.975574 6.565006,29.794101 20.771485,38.498047 3.367181,2.080838 7.162253,3.230344 10.808593,4.671875 -3.51722,4.908636 -7.183031,9.958366 -10.910156,15.191406 l -0.539062,0.76172 0.767578,0.53125 c 6.540143,4.46642 12.886312,8.80716 19.347656,13.23437 l 0.701172,0.48829 0.53125,-0.67188 c 0.604176,-0.76529 0.969338,-1.25599 1.328125,-1.73438 l 0.0078,-0.008 c 6.297695,-8.68922 12.727497,-17.34562 18.957032,-26.13086 v -0.008 c 5.421807,-7.694188 10.932897,-15.408774 15.900391,-23.460937 5.0416,-8.156712 5.93726,-17.351032 4.27344,-26.603515 C 104.40805,37.197475 94.472452,24.88893 80.707031,19.6875 c 0.81354,-1.378328 1.752084,-2.973365 2.111328,-3.566406 l 1.373047,-2.257813 z m 2.095703,6.9843748 8.482422,4.69336 C 74.299258,20.499669 68.26176,30.805992 66.6875,33.396484 l -1.646484,2.714844 3.011718,1.019531 c 2.493132,0.843395 4.781234,1.358991 6.416016,2.19336 7.576789,3.862832 11.493849,9.373604 11.537109,17.871093 v 0.0078 c 0.0553,8.84668 -3.833275,14.816836 -11.677734,18.365234 h 0.06641 l -0.162109,0.07422 -0.01563,0.0078 -0.146485,0.06641 0.04297,-0.04492 C 67.506059,78.60099 61.322456,77.913424 56.404297,75.236309 51.479845,72.555766 47.865597,67.856593 46.564453,62.8867 v -0.04492 l -0.03711,-0.07422 c -1.170902,-4.504252 -1.036366,-8.756206 1.011718,-12.695312 l 0.02148,-0.02344 0.04492,-0.146484 c 2.363622,-4.553008 5.058731,-8.98836 7.773437,-13.53125 l 0.0078,-0.0078 0.0293,-0.05859 z"
+                              transform="scale(0.26458333)" />
+                          </g>
+                          <g class="st1" id="g1431"
+                            transform="matrix(-0.09660993,-0.05577777,0.05577777,-0.09660993,24.072653,27.696212)"
+                            style="fill:#eeeeee;stroke:#eeeeee;stroke-width:8.1753;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+                </nav>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- Links -->
-      <div class="vertical-section left-sharp col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2">
-        <nav class="nav">
-          <!-- Github -->
-          <li class="nav-item">
-            <a class="nav-link active" href="https://github.com/amirihusayn" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-          <!-- Itch -->
-          <li class="nav-item">
-            <a class="nav-link active" href="https://amirihusayn.itch.io" target="_blank">
-              <i class="fab fa-itch-io"></i>
-            </a>
-          </li>
-          <!-- Linkedin -->
-          <li class="nav-item">
-            <a class="nav-link active" href="https://www.linkedin.com/in/amirihusayn" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <!-- Instagram -->
-          <li class="nav-item">
-            <a class="nav-link active" href="https://www.instagram.com/amirihusayn" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <!-- Telegram -->
-          <li class="nav-item">
-            <a class="nav-link active" href="https://t.me/amirihusayn" target="_blank">
-              <i class="fab fa-telegram"></i>
-            </a>
-          </li>
-          <!-- Virgool -->
-          <li class="nav-item">
-            <a class="nav-link" href="https://virgool.io/@AmiriHusayn" target="_blank"> 
-              <svg
-              xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-              width="30"
-              height="30"
-              viewBox="0 0 9.2604168 9.2604168" version="1.1" id="svg859" inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)" sodipodi:docname="virgool.svg">
-             <defs
-                id="defs853">
-               <marker
-                  style="overflow:visible"
-                  id="marker1754"
-                  refX="0"
-                  refY="0"
-                  orient="auto"
-                  inkscape:stockid="Arrow1Lstart"
-                  inkscape:isstock="true">
-                 <path
-                    transform="matrix(0.8,0,0,0.8,10,0)"
-                    style="fill-rule:evenodd;stroke:#eeeeee;stroke-width:1pt"
-                    d="M 0,0 5,-5 -12.5,0 5,5 Z"
-                    id="path1752" />
-               </marker>
-               <marker
-                  style="overflow:visible"
-                  id="marker1738"
-                  refX="0"
-                  refY="0"
-                  orient="auto"
-                  inkscape:stockid="Arrow1Lstart"
-                  inkscape:isstock="true">
-                 <path
-                    transform="matrix(0.8,0,0,0.8,10,0)"
-                    style="fill-rule:evenodd;stroke:#eeeeee;stroke-width:1pt"
-                    d="M 0,0 5,-5 -12.5,0 5,5 Z"
-                    id="path1736" />
-               </marker>
-               <marker
-                  style="overflow:visible"
-                  id="Arrow1Lstart"
-                  refX="0"
-                  refY="0"
-                  orient="auto"
-                  inkscape:stockid="Arrow1Lstart"
-                  inkscape:isstock="true">
-                 <path
-                    transform="matrix(0.8,0,0,0.8,10,0)"
-                    style="fill-rule:evenodd;stroke:#eeeeee;stroke-width:1pt"
-                    d="M 0,0 5,-5 -12.5,0 5,5 Z"
-                    id="path1466" />
-               </marker>
-             </defs>
-             <g
-                inkscape:label="Layer 1"
-                inkscape:groupmode="layer"
-                id="layer1">
-               <g
-                  id="g2384"
-                  style="opacity:1"
-                  transform="matrix(0.26901547,0,0,0.26901547,-0.07742942,-0.10987485)">
-                 <path
-                    id="path2386"
-                    style="color:#eeeeee;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#eeeeee;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#eeeeee;solid-opacity:1;vector-effect:none;fill:#eeeeee;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.83054;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#eeeeee;stop-opacity:1"
-                    d="M 66.541016,4.0820312 66.105469,4.9082031 65.330078,6.3847656 59.394531,17.724609 c -2.433093,0.437107 -4.905985,1.051062 -7.417969,1.955079 -16.31304,5.884057 -25.871545,18.449671 -27.128906,36.052734 -1.218343,16.975574 6.565006,29.794101 20.771485,38.498047 3.367181,2.080838 7.162253,3.230344 10.808593,4.671875 -3.51722,4.908636 -7.183031,9.958366 -10.910156,15.191406 l -0.539062,0.76172 0.767578,0.53125 c 6.540143,4.46642 12.886312,8.80716 19.347656,13.23437 l 0.701172,0.48829 0.53125,-0.67188 c 0.604176,-0.76529 0.969338,-1.25599 1.328125,-1.73438 l 0.0078,-0.008 c 6.297695,-8.68922 12.727497,-17.34562 18.957032,-26.13086 v -0.008 c 5.421807,-7.694188 10.932897,-15.408774 15.900391,-23.460937 5.0416,-8.156712 5.93726,-17.351032 4.27344,-26.603515 C 104.40805,37.197475 94.472452,24.88893 80.707031,19.6875 c 0.81354,-1.378328 1.752084,-2.973365 2.111328,-3.566406 l 1.373047,-2.257813 z m 2.095703,6.9843748 8.482422,4.69336 C 74.299258,20.499669 68.26176,30.805992 66.6875,33.396484 l -1.646484,2.714844 3.011718,1.019531 c 2.493132,0.843395 4.781234,1.358991 6.416016,2.19336 7.576789,3.862832 11.493849,9.373604 11.537109,17.871093 v 0.0078 c 0.0553,8.84668 -3.833275,14.816836 -11.677734,18.365234 h 0.06641 l -0.162109,0.07422 -0.01563,0.0078 -0.146485,0.06641 0.04297,-0.04492 C 67.506059,78.60099 61.322456,77.913424 56.404297,75.236309 51.479845,72.555766 47.865597,67.856593 46.564453,62.8867 v -0.04492 l -0.03711,-0.07422 c -1.170902,-4.504252 -1.036366,-8.756206 1.011718,-12.695312 l 0.02148,-0.02344 0.04492,-0.146484 c 2.363622,-4.553008 5.058731,-8.98836 7.773437,-13.53125 l 0.0078,-0.0078 0.0293,-0.05859 z"
-                    transform="scale(0.26458333)" />
-               </g>
-               <g
-                  class="st1"
-                  id="g1431"
-                  transform="matrix(-0.09660993,-0.05577777,0.05577777,-0.09660993,24.072653,27.696212)"
-                  style="fill:#eeeeee;stroke:#eeeeee;stroke-width:8.1753;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-             </g>
-              </svg> 
-            </a>
-          </li>
-        </nav>
-      </div>
     </div>
 
-    <!-- About me -->
-    <div class="row flex-center">
-      <div class="text-section col-lg-12">
-        <h4 style="text-align: justify; width: 100%;">About me</h4>
-        <p class="text-class">
-          Since childhood I've been in love with Game and Animation.
-          For preparation of this hard journey,
-          I studied Software Engineering and along it I developed Art,
-          Design and Animation skills gradually. After a long time,
-          I noticed that fighting in several sides doesn't make progress and
-          I should take a skill and try to be professional in it.
-          I think I'm surrounded and should do something.
-          Always God blessed me and helped me. So I will try...
-        </p>
-      </div>
-    </div>
-
-    <!-- Experience -->
-    <div class="row skill-section flex-center">
-      <h4 style="text-align: justify; width: 100%;">Experience</h4>
-      <!-- Animation -->
-      <div class="progress col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85"
-          aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-          <p class="m-0">Animation</p></div>
-      </div>
-
-      <!-- Design -->
-      <div class="progress col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85"
-          aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-          <p class="m-0">Design</p></div>
-      </div>
-
-      <!-- Development -->
-      <div class="progress col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85"
-          aria-valuemin="0" aria-valuemax="100" style="width: 35%"> 
-          <p class="m-0">Development</p></div>
-      </div>
-    </div>
-  
-    <!-- Art skills -->
-    <div class="row skill-section">
-      <h4 style="text-align: justify; width: 100%;">Art skills</h4>
-      <!-- Knowledge 1 -->
-      <p class="w-100 mt-0 mb-0">
-        <span class="badge  font-weight-bold">2D</span>
-        <span class="badge font-weight-bold ">Vector Design</span>
-        <span class="badge font-weight-bold ">Adobe Illustrator</span>
-        <span class="badge font-weight-bold ">Inkscape</span>
-        <span class="badge font-weight-bold ">Anime Studio</span>
-        <span class="badge font-weight-bold ">Cut Out Animation</span>
-      </p>
-      <!-- Knowledge 1 -->
-      <p class="w-100 mt-0 mb-0">
-        <span class="badge font-weight-bold ">3D</span>
-        <span class="badge font-weight-bold ">Blender</span>
-        <span class="badge  font-weight-bold">Modeling</span>
-        <span class="badge  font-weight-bold">Rig</span>
-        <span class="badge  font-weight-bold">Aniamtion</span>
-      </p>
-    </div>
-
-    <!-- Industrial skills -->
-    <div class="row skill-section">
-      <h4 style="text-align: justify; width: 100%;">Industrial skills</h4>
-      <!-- Knowledge 1 -->
-      <p class="w-100 mt-0 mb-0">
-        <span class="badge  font-weight-bold">Unity</span>
-        <span class="badge  font-weight-bold">C#</span>
-        <span class="badge  font-weight-bold">C++</span>
-      </p>
-
-      <!-- Knowledge 2 -->
-      <p class="w-100 mt-0 mb-0">
-        <span class="badge  font-weight-bold">Git</span>
-        <span class="badge  font-weight-bold">Trello</span>
-        <span class="badge  font-weight-bold">Teamwork</span>
-        <span class="badge  font-weight-bold">Planning</span>
-      </p>
-
-      <!-- Knowledge 3 -->
-      <p class="w-100 mt-0 mb-0">
-        <span class="badge  font-weight-bold">Algorithm</span>
-        <span class="badge  font-weight-bold">Genetic Algorithm</span>
-        <span class="badge  font-weight-bold">Desing Patterns</span>
-      </p>
-    </div>
-
-    <!-- Other skills -->
-    <div class="row skill-section">
-      <h4 style="text-align: justify; width: 100%;">Other skills</h4>
-      <p class="w-100 text-left mt-0 mb-0">
-        Notice : These are low-level skills. I only use them when needed.
-      </p>
-      <!-- Knowledge 1 -->
-      <p class="w-100 mt-0 mb-0">
-        <span class="badge  font-weight-bold">python</span>
-      </p>
-      <!-- Knowledge 2 -->
-      <p class="w-100 mt-0 mb-0">
-        <span class="badge  font-weight-bold">HTML</span>
-        <span class="badge  font-weight-bold">CSS</span>
-        <span class="badge  font-weight-bold">Bootstrap</span>
-        <span class="badge  font-weight-bold">LESS</span>
-        <span class="badge  font-weight-bold">SASS</span>
-        <span class="badge  font-weight-bold">JavaScript</span>
-        <span class="badge  font-weight-bold">jQuery</span>
-      </p>
-    </div>
-
-    <!-- Courses -->
-    <div class="row skill-section">
-      <h4 style="text-align: justify; width: 100%;">Courses</h4>
-      <p class="course w-100 text-left mt-1 mb-1">Lynda 2D Character Animation with George Maestri</p>
-      <p class="course w-100 text-left mt-1 mb-1">Lynda Illustrator CC 2019 Essential Training</p>
-      <p class="course w-100 text-left mt-1 mb-1">Blender Essentials Training 2.79 with George Maestri</p>
-      <p class="course w-100 text-left mt-1 mb-1">Blender Character Modeling with Darrin Lile</p>
-      <p class="course w-100 text-left mt-1 mb-1">Lynda Unity 5 UNet Network Gaming</p>
-      <p class="course w-100 text-left mt-1 mb-1">PLURALSIGHT Finite State Machines in Unity with Marc Gilbert</p>
-    </div>
-
-    <!-- Games -->
-    <div class="row skill-section">
-      <h4 style="text-align: justify; width: 100%;">Games</h4>
-        <iframe src="https://itch.io/embed/981329?border_width=0&amp;bg_color=bf9959&amp;fg_color=e3e3e3&amp;link_color=3e9315&amp;border_color=9f7939" width="206" height="165" frameborder="0"><a href="https://amirihusayn.itch.io/honorofsoldiership">HonorOfSoldiership by amirihusayn</a></iframe>
-        <iframe src="https://itch.io/embed/977584?border_width=0&amp;bg_color=381a40&amp;fg_color=eeeeee&amp;link_color=fda403&amp;border_color=63456b" width="206" height="165" frameborder="0"><a href="https://amirihusayn.itch.io/thekingdomofdarkness">TheKingdomOfDarkness by amirihusayn</a></iframe>
-    </div>
-
-    <!-- Footer -->
-    <div class="row flex-center">
-      <div class="section-footer col-lg-12">
-        <p>Imam Mahdi (As) declared : We are aware of all your news and none of your actions is hidden from us.
-        </p>
-      </div>
-    </div>
 
     <!-- LESS -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
@@ -293,15 +211,15 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
+      </script>
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
+      </script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+      </script>
 </body>
 
 </html>
